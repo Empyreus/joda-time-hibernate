@@ -175,7 +175,7 @@
         </executions>
         <configuration>
           <doCheck>true</doCheck>
-          <doUpdate>true</doUpdate>
+          <doUpdate>false</doUpdate>
         </configuration>
       </plugin>
       <plugin><!-- invoke with mvn site-deploy -->
