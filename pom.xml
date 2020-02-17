@@ -195,7 +195,7 @@
             </manifest>
             <manifestEntries>
               <TimeStamp>${buildNumber}</TimeStamp>
-              <BuildScmBranch>${scmBranch}</BuildScmBranch>
+              <BuildScmBranch>$\{scmBranch}</BuildScmBranch>
             </manifestEntries>
           </archive>
         </configuration>
