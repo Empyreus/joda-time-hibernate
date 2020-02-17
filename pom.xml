@@ -174,8 +174,9 @@
           </execution>
         </executions>
         <configuration>
-          <format>{0}</format>
+          <format>TimeStamp: {0,date,yyyy-MM-dd HH:mm:ss} | SCMRevision: {1}</format>
           <items>
+            <item>timestamp</item>
             <item>scmVersion</item>
           </items>
           <doCheck>true</doCheck>
