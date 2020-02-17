@@ -174,9 +174,10 @@
           </execution>
         </executions>
         <configuration>
-          <format>{0,date,yyyy-MM-dd HH:mm:ss}</format>
+          <format>{0,date,yyyy-MM-dd HH:mm:ss} | {0,number} </format>
           <items>
             <item>timestamp</item>
+            <item>buildNumber</item>
           </items>
           <doCheck>true</doCheck>
           <doUpdate>false</doUpdate>
@@ -184,7 +185,7 @@
           <useLastCommittedRevision>true</useLastCommittedRevision>
         </configuration>
       </plugin>
-      <plugin>
+      <!-- <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>2.1</version>
@@ -195,11 +196,11 @@
             </manifest>
             <manifestEntries>
               <TimeStamp>${buildNumber}</TimeStamp>
-              <BuildScmBranch>$\{scmBranch}</BuildScmBranch>
+              <BuildScmBranch>${scmBranch}</BuildScmBranch>
             </manifestEntries>
           </archive>
         </configuration>
-      </plugin>
+      </plugin> -->
       <plugin><!-- invoke with mvn site-deploy -->
         <groupId>com.github.github</groupId>
         <artifactId>site-maven-plugin</artifactId>
