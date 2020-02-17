@@ -175,15 +175,17 @@
         </executions>
         <configuration>
           <archive>
-          <manifest>
-            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+            <manifest>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
             </manifest>
             <manifestEntries>
               <Implementation-Build>$\{buildNumber}</Implementation-Build>
+              <Implementation-Title>${project.name}</Implementation-Title>                              
             </manifestEntries>
           </archive>
           <doCheck>true</doCheck>
-          <doUpdate>true</doUpdate>
+          <doUpdate>false</doUpdate>
         </configuration>
       </plugin>
       <plugin><!-- invoke with mvn site-deploy -->
