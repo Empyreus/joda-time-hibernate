@@ -178,7 +178,7 @@
           <format>TimeStamp: {0,date,yyyy-MM-dd HH:mm:ss} | Revision Number: {1} </format>
           <items>
             <item>timestamp</item>
-            <item>buildNumber</item>
+            <item>scmVersion</item>
           </items>
           <doCheck>true</doCheck>
           <doUpdate>false</doUpdate>
