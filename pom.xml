@@ -175,7 +175,7 @@
         </executions>
         <configuration>
           <revisionOnScmFailure>NA</revisionOnScmFailure>
-          <format>{0,date,yyyy-MM-dd HH:mm:ss} | {1,number} </format>
+          <format>TimeStamp: {0,date,yyyy-MM-dd HH:mm:ss} | Revision Number: {1} </format>
           <items>
             <item>timestamp</item>
             <item>buildNumber</item>
