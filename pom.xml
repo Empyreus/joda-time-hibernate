@@ -175,8 +175,6 @@
         </executions>
         <configuration>
           <archive>
-            <implementation-version>${project.version}</implementation-version>
-            <implementation-build>${buildNumber}</implementation-build>
           </archive>
           <doCheck>true</doCheck>
           <doUpdate>false</doUpdate>
