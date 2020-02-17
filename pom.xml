@@ -174,18 +174,23 @@
           </execution>
         </executions>
         <configuration>
+          <doCheck>true</doCheck>
+          <doUpdate>false</doUpdate>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
           <archive>
             <manifest>
               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-              <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
             </manifest>
             <manifestEntries>
               <Implementation-Build>$\{buildNumber}</Implementation-Build>
-              <Implementation-Title>${project.name}</Implementation-Title>                              
             </manifestEntries>
           </archive>
-          <doCheck>true</doCheck>
-          <doUpdate>false</doUpdate>
         </configuration>
       </plugin>
       <plugin><!-- invoke with mvn site-deploy -->
