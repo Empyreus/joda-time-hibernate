@@ -174,11 +174,9 @@
           </execution>
         </executions>
         <configuration>
-          <format>At {1,time} on {1,date}, there was {2} on planet {0,number,integer}.</format>
+          <format>{0,date,yyyy-MM-dd HH:mm:ss}</format>
           <items>
-            <item implementation="java.lang.Integer">7</item>
             <item>timestamp</item>
-            <item>a disturbance in the Force</item>
           </items>
           <doCheck>true</doCheck>
           <doUpdate>false</doUpdate>
