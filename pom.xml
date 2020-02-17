@@ -174,15 +174,12 @@
           </execution>
         </executions>
         <configuration>
-          <revisionOnScmFailure>NA</revisionOnScmFailure>
-          <format>{1}</format>
+          <format>{0}</format>
           <items>
             <item>scmVersion</item>
           </items>
           <doCheck>true</doCheck>
           <doUpdate>false</doUpdate>
-          <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
-          <useLastCommittedRevision>true</useLastCommittedRevision>
         </configuration>
       </plugin>
       <!-- <plugin>
